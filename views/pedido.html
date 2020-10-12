@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>yupagumi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type=”image/png” href="../public/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="../public/catalogo.css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../public/catalogo.css"> -->
+  </head>
+
+  <body>
+    <header>
+
+      <!-- Navigation -->
+      <nav class="navbar fixed-top navbar-expand-lg fixed-top" id="navbar">
+          <div class="container">
+          <!-- <a class="navbar-brand" href="#">
+      <img src="logoYuli.png" alt="logo" style="width:300px;"></a> -->
+          <a class="navbar-brand" href="/">Muebles Yupagumi</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/producto">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#ci1">Quienes Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#sg2">Nuestro Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#sg3">Refacción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#sg4">¿Por qué elegirnos?</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+      </nav>
+      </header>
+<br>
+<br>
+<br>
+<div class="container">
+
+  <h1 class="mt-4 mb-3">Realizar Cotización
+    <!-- <small>Subheading</small> -->
+  </h1>
+  <div class="row">
+    <div class="col-lg-8 mb-4">
+        <label>Nombre:</label>
+        <span hidden id="nom">Campo Obligatorio*</span>
+        <input type="text" class="form-control" id="name" required>
+        <br>
+        <label>Celular:</label>
+        <span hidden id="celu">Campo invalido o inexistente*</span>
+        <input type="tel" class="form-control" id="phone" required>
+        <br>
+        <label>Correo Electronico:</label>
+        <span hidden id="mail">Campo invalido o inexistente*</span>
+        <input type="email" class="form-control" id="email" required>
+        <br>
+        <label>Descripcion del producto:</label>
+        <span hidden id="descrip">Por favor introduce una descripcion*</span>
+        <textarea rows="10" cols="100" class="form-control" id="message" value="hola" required maxlength="999" style="resize:none"></textarea>
+        <br>
+        <button class="btn btn-primary" onclick="Pedido();" style="width:250px; height:50px">Enviar Cotización</button>
+    </div>
+  </div>
+</div>
+<div class="alert alert-success" id="success-alert" hidden><strong>Pedido Realizado!</strong> Nos pondremos en contacto los más pronto posible.</div>
+
+      <!-- Footer -->
+      <footer class="py-5 container-fluid" style="background-color:#EAEDED;">
+        <p><h2 class="m-0 text-center">Muebles Yupagumi</h2></p>
+        <p><h3 class="m-0 text-center">Línea de atención al cliente: <a style="color: black;"href="https://api.whatsapp.com/send?phone=573137143047&text=Hola!">3137143047</a></h3></p>
+        <p><h3 class="m-0 text-center">Correo de contacto:<i> mueblesyupagumi@gmail.com</i></h3></p>
+      </footer>
+      <script src="../public/pedido.js"></script>
+  </body>
+</html>
